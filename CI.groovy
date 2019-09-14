@@ -2,23 +2,23 @@ node('master')
 {
 stage('Prepare')
 {
-Println("Need to prepare ")
+println("Need to prepare ")
 }
 stage('clone git')
 {
-Println("Need to Cloning")
+println("Need to Cloning")
 }
 stage('Build')
 {
-Println("Need to Building ")
+println("Need to Building ")
 }
 stage('Deploy')
 {
-Println("Need to Deploying")
+println("Need to Deploying")
 }
 stage('Notify')
 {
-Println("Need to Notifying")
+println("Need to Notifying")
 }
 
 }
