@@ -1,3 +1,3 @@
 freeStyleJob('Freestyle Script'){
-	decription('My Freestyle Script.')
+	description('My Freestyle Script.')
 }
