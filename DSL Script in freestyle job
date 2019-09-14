@@ -5,7 +5,7 @@ freeStyleJob('DSL Script in freestyle'){
     	}
     steps {
         dsl {
-            external('projectC.groovy')
+            external('folderfile2.groovy')
             removeAction('DISABLE')
             ignoreExisting()
             additionalClasspath('lib')
