@@ -2,7 +2,13 @@ freeStyleJob('DSL Script in freestyle'){
 	description('DSL script in folder')
 	 scm {
         github('Surendarmurugesan/GITSession')
+    	}
+    steps {
+        dsl {
+            external('projectC.groovy')
+            removeAction('DISABLE')
+            ignoreExisting()
+            additionalClasspath('lib')
+        }
     }
-    
-    
 }
