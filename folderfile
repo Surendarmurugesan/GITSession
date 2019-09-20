@@ -1,5 +1,5 @@
 folder('SurenDare') {
-    displayName('SalesDev')
+    displayName('SalesDev1')
     description('Folder for project A')
 }
 
