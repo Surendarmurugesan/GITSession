@@ -1,6 +1,12 @@
 pipelineJob('First_PipelineJob')
 {
   scm {
-        github('Surendarmurugesan/GITSession')
+    git{
+      remote{
+        name('origin')
+        url('https://github.com/Surendarmurugesan/GITSession.git')
+      }
+    }
+
     }
 }
