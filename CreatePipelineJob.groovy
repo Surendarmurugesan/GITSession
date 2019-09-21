@@ -4,7 +4,7 @@ pipelineJob('Pipeline-1')
     cps{
       script(readFileFromWorkspace('CI.groovy'))
       def approvals = org.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval.get()
-      approvals.approveScript(approvals.hash(jobScript,"groovy"))
+      approvals.approveScript(approvals.hash(script,"groovy"))
     }
   }
 }
