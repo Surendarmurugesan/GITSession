@@ -1,10 +1,13 @@
-pipelineJob('Pipeline-1')
+pipelineJob('Pipeline-2')
 {
   definition{
-    cps{
-      script(readFileFromWorkspace('CI.groovy'))
-      def approvals = org.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval.get()
-      approvals.approveScript(approvals.hash(script,"groovy"))
+    cpsScm{
+      scm {
+        github('Surendarmurugesan/GITSession')
+        scriptPath(CI.groovy)
+        def approvals = org.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval.get()
+        approvals.approveScript(approvals.hash(scriptPath,"groovy"))
+    }
     }
   }
 }
