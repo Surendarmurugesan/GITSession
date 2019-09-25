@@ -427,7 +427,7 @@ under the License.
     </dependencies>
     <!--bootstrap-start-comment-->
   </dependencyManagement>
-  <!--bootstrap-end-comment-->
+  
   <!--bootstrap-start-comment-->
   <dependencies>
     <dependency>
@@ -437,4 +437,5 @@ under the License.
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <!--bootstrap-end-comment-->
+  
+</project>
