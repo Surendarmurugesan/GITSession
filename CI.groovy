@@ -1,8 +1,10 @@
 node('master')
 {
-stage('Prepare')
+stage('Projetc parameter')
 {
-println("Need to prepare ")
+println("Parameterized ")
+  echo "pulling changes from branch ${params.branch}"
+  echo " The value of A is ${A}"
 }
 stage('clone git')
 {
