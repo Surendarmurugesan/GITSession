@@ -6,6 +6,5 @@ pipelineJob('Pipeline Demo')
         def approvals = org.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval.get()
         approvals.approveScript(approvals.hash(scriptPath,"groovy"))
     }
-    }
   }
 }
