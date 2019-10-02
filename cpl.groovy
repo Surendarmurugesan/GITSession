@@ -3,7 +3,6 @@ folder ("$BUName/$ProductName") { }
 pipelineJob("$BUName/$ProductName/CICD_$AppName") {
   parameters {
     stringParam('AppRepo',"$ApplicationRepo","GIT URL")
-    stringParam('UnitTestTool',"$UnitTestRun","")
     stringParam('AppName',"$AppName","")
     activeChoiceParam('Branch') {
         description('select the branch')
